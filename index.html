@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="tip.png" />
+    
+   <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="container" oninput="update()">
+        <h1>Quick Tip</h1>
+        <section>
+            <div class="bill">
+                <label for="yourBill">Bill </label>
+                <input type="Number" placeholder="Your Bill" id="yourBill" oninput="update()"></input>
+            </div>
+            <div>
+                <div class="space-between">
+                    <label for="tipInput">Select Tip</label>
+                    <span id="tipPercentage">%</span>
+                </div>
+                <input type="range" value="0" id="tipInput"  class="range" / >
+            </div>
+            <div class="space-between">
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+            <hr>
+            <div class="space-between total">
+                <span>Total</span>
+                <span id="totalWithTip"></span>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div class="space-between">
+                <label for="splitInput">Split</label>
+                <span id="splitValue"></span>
+                </div>
+                <input type="range" value="1"min="1" max="10" id="splitInput" class="range">
+            </div>
+            <div class="space-between">
+                <span>Bill Each</span>
+                <span id="billEach"></span>
+            </div>
+            <div class="space-between">
+                <span>Tip Each</span>
+                <span id="tipEach"></span>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+    
+</body>
+</html>
