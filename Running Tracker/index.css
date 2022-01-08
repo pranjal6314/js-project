@@ -75,3 +75,25 @@ li{
     margin: 0.5rem 0;
     padding: 0 1rem;
   } 
+
+
+  .progress{
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+  .progress h3{
+      font-size: 1.6rem;
+      font-weight: lighter;
+  }
+
+.progressCircleWrapper{
+    display: flex;
+    justify-content: center;
+}
+#progressCircle{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+   
+   background:  conic-gradient(#0ad9ff 50%,#2d3740 50%);
+}
