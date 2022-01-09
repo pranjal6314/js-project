@@ -1,0 +1,118 @@
+
+ html{
+ 
+    font-family: 'MuseoModerno', cursive;
+    font-size: 10px;
+    background: aquamarine;
+}
+body{
+    padding: 1px;
+    background: rgb(35, 161, 109);
+    color:rgb(230,225,225);
+
+    width: 60%;
+    margin: 0 auto;
+}
+.logo{
+   
+    display: flex;
+    justify-content: center;
+    
+}
+
+form{
+    text-align: center;
+}
+label{
+    font-size: 1.8rem;
+}
+input[type="number"]{
+    font-family: inherit;
+    text-align: center;
+   border-radius:0.5rem;
+   border: none;
+
+}
+button{
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #0ad9ff;
+    border: none;
+    margin: 0.5rem 0 1rem 0;
+}
+ul{
+    padding: 0;
+    display: flex;
+    list-style: none ;
+    justify-content: space-between;
+    margin: 1rem;
+}
+li{
+    border: 1px solid;
+    padding: 1rem 1.5rem;
+}
+.entriesWrapper {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+  }
+  
+  h4 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: lighter;
+  }
+  .data{
+      font-size:  1.4rem;
+
+  }
+  .data div {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+  } 
+
+  .progress{
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+  .progress h3{
+      font-size: 1.6rem;
+      font-weight: lighter;
+  }
+
+.progressCircleWrapper{
+    display: flex;
+    justify-content: center;
+}
+#progressCircle{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    /* background:  conic-gradient(#0ad9ff 50%,#2d3740 50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#progressCentre{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background:  rgb(35, 161, 109);
+}
+@media screen and (min-width:800px){
+
+    bodey{
+        width: 60%;
+    }
+    input[type="number"]{
+        width:40%;}
+        
+}
