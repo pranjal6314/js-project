@@ -76,7 +76,6 @@ li{
     padding: 0 1rem;
   } 
 
-
   .progress{
       text-align: center;
       padding-bottom: 1rem;
@@ -94,6 +93,26 @@ li{
     height: 250px;
     width: 250px;
     border-radius: 50%;
-   
-   background:  conic-gradient(#0ad9ff 50%,#2d3740 50%);
+    /* background:  conic-gradient(#0ad9ff 50%,#2d3740 50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#progressCentre{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background:  rgb(35, 161, 109);
+}
+@media screen and (min-width:800px){
+
+    bodey{
+        width: 60%;
+    }
+    input[type="number"]{
+        width:40%;}
+        svg{
+            max-width :50%;
+
+        }
 }
