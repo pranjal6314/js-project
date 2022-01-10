@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Guess The Number Game</title>
+</head>
+
+<body onload="init()">
+    <main >
+        <div id="welcome" class="Screen">
+            <h2>Guess the random Number <br>between 1-100</h2>
+            <section>
+                <p>select difficulty setting:</p>
+                <div class="button-wrapper">
+                    <button onclick="easyMode()">Easy 10 Attempt</button>
+                    
+                    <button onclick="hardMode">Hard 5 Attempt</button>
+                </div>
+            </section>
+        </div>
+        <div></div>
+        <div id="gameArea">
+            <button id="newGAmeButton">New Game</button>
+            <section>
+                <h3 id="textOutput">Your Guess:</h3>
+                <input type="Number" id="inputBox" min="1" max="100">
+            </section>
+            <section>
+                <p>Current range</p>
+                <span id="rangeOutput">1-100</span>
+                <div id="range">
+                    <span id="low"></span>
+                    <span id="space"></span>
+                    <span id="high"></span>
+                </div>
+
+            </section>
+            <section class="stats">
+                <div class="info">
+                    <p>Number of pervious attempts:</p>
+                    <span id="attempts"> 0</span>
+                </div>
+                <div class="info">
+                    <p>Your pervious Guess:</p>
+                    <span id="attempts"> -</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
