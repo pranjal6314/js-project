@@ -21,16 +21,16 @@
                 <div class="button-wrapper">
                     <button onclick="easyMode()">Easy 10 Attempt</button>
                     
-                    <button onclick="hardMode">Hard 5 Attempt</button>
+                    <button  class="button2" onclick="hardMode()">Hard 5 Attempt</button>
                 </div>
             </section>
         </div>
-        <div></div>
+       
         <div id="gameArea">
-            <button id="newGAmeButton">New Game</button>
+            <button id="newGameButton" onclick="newGame()">New Game</button>
             <section>
                 <h3 id="textOutput">Your Guess:</h3>
-                <input type="Number" id="inputBox" min="1" max="100">
+                <input type="Number" id="inputBox" min="1" max="100" onchange="compareGuess()">
             </section>
             <section>
                 <p>Current range</p>
@@ -45,13 +45,14 @@
             <section class="stats">
                 <div class="info">
                     <p>Number of pervious attempts:</p>
-                    <span id="attempts"> 0</span>
+                    <span id="attempts"> </span>
                 </div>
                 <div class="info">
                     <p>Your pervious Guess:</p>
-                    <span id="attempts"> -</span>
+                    <span id="guesses"> -</span>
                 </div>
             </section>
+            <button class="button1" onclick="endGame()"><span>Home </span></button>
         </div>
     </main>
 
