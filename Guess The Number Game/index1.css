@@ -1,0 +1,157 @@
+:root{
+    --green:#83e1d0;
+    --red:#ef7b54;
+    --backgroundL:#f8f1e9;
+    --gradient-1:#343e63 ;
+    --gradient-2:#2a3352;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+body{
+    width: 90%;
+    margin: 0 auto;
+    background: radial-gradient(var(--gradient-1) ,#2a3352);
+}
+
+main{
+    text-align: center;
+    background-color: #f8f1e9;
+    border: solid #ef7b54;
+    border-width:  0 8px 8px 8px;
+    min-height: 80vh; 
+    border-radius : 0 0 3rem 3rem ;
+    padding: 1rem;
+    color: #1f2933;
+
+}
+.logo{
+   
+    display: flex;
+    justify-content: center;
+    
+}
+
+h2{
+    font-size: 2.2rem;
+    margin: 2rem 0;
+}
+p{
+    font-size:1.8
+}
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+button{
+     border: none;
+     cursor: pointer;
+     background: var(--green);
+     padding: 2rem;
+     border-radius: 1rem 1rem 0 0;
+     
+}
+
+.button2{
+    background:var(--red) ;
+    border-radius: 0 0 1rem 1rem;
+}
+h2{
+    font-size: 3rem;
+
+}
+input{
+    border: 1px solid lightblue;
+    background: transparent;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    width: 16rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+#range{
+    display: flex;
+    background: var(--green);
+    height: 50px;
+    padding: 0;
+    margin: 0 0 4rem 0;
+}
+#rangeOutput{
+    font-size: 1.6rem;
+}
+.stats{
+    text-align: left;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info span{
+    font-size: 1.6rem;
+}
+#newGameButton{
+    border-radius: 0;
+}
+
+#gameArea button{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+
+}
+#gameArea button:hover{
+background-color: #83e1d0;
+color: white;
+border-radius: 1rem;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button1{
+    border-radius: 1rem;
+}
+
+
+.button1 span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button1:hover span {
+    padding-right: 25px;
+  }
+  
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.flash{
+    animation: flash 1s infinite;
+}
+@keyframes flash {
+  0%{  opacity: 1 ;}
+  50%{opacity: 0.5;}
+  100%{opacity: 1;}
+}
+
+@media (min-width:800px) {
+    body{
+        width: 80vh;
+    }
+    
+}
+
+
