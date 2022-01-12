@@ -1,1 +1,15 @@
 
+
+    html{
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight:#212560 ;
+    }
+#game-Area{
+    padding-top: 3rem;
+    
+}
+.imageArea,
+.stats{
+    min-height: 30vh;
+}
