@@ -1,1 +1,44 @@
-//hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="icon.png" />
+    <title>Number Match Game</title>
+</head>
+<body>
+    <main id="game-Area">
+        <div class="stats">
+            <h3>Score : <span id="currentScore">7/ <span id="totalAvailable">20</span></span></h3>
+            <p class="items">
+                <span id="number">4 <span id="item-Name">Banana?</span></span>
+            </p>
+            <div class="match-Button">
+                <button>&#10003;</button>
+                <button>&#10007;</button>
+            </div>
+        </div>
+        <div class="imageArea">
+            <h3 id="msg"></h3>
+            <div id="startScreen">
+                <h1>Welcome to the <em>Number Match</em> game....</h1>
+                <em class="space-y">The rules are simple.</em>
+                <p class="space-y">&#9654; Hit thumb up if the number of items on the image matches the displayed number.</p>
+                <p class="space-y">&#9654; Thumbs down if no match!</p>
+                <p class="space-y">You have <span id="timeSetting">3</span> secound to decide.</p>
+                <button id="play-button">Play!</button>
+                <div class="imageConatiner">
+                    <img src="images/blocks.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
