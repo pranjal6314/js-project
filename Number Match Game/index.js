@@ -80,3 +80,7 @@ const images = [
       number_of_items: 8,
     },
   ]
+
+  const randomNumber=Math.floor(Math.random()*images.length);
+  const randomImageName=images[randomNumber].image_name;
+  console.log(randomImageName)
