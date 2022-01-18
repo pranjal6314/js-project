@@ -2,10 +2,11 @@
     html{
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
-        font-weight:#212560 ;
+       
     }
 #game-Area{
-    padding-top: 3rem;
+    padding-top: 5rem;
+    
     
 }
 .imageArea,
@@ -23,4 +24,59 @@
 h1 ,h3{
     margin-top: 0;
     font-size: 2.2rem;
+}
+
+.items{
+    font-size: 2rem;
+}
+button{
+   width:8rem;
+   border: 0;
+   border-radius :3rem;
+   padding: 1rem;
+   background: transparent;
+   border: 2px solid greenyellow;
+   cursor: pointer;
+
+
+}
+button:nth-child(2){
+    border: 2px solid red;
+}
+.stats{
+    background: whitesmoke;
+    border: 2px solid #859ede;
+    border-radius: 3rem 3rem 0 0;
+  
+    align-items: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+.space-y{
+    margin:  3rem 0;
+}
+img{
+    width: 100%;
+    border-radius: 3rem;
+}
+@media all and (min-width:600px){
+    #game-Area{
+        display: flex;
+    }
+    .imageArea,
+    .stats{
+        min-height:50vh;
+    }
+    .imageArea{
+        border-radius: 3rem;
+        transform: translate(-4rem);
+        flex: 2;
+    }
+    .stats{
+        flex: 1;
+        border-radius: 3rem  0 0 3rem;
+        margin-left: 3rem;
+        padding-right: 3rem;
+        
+    }
 }
