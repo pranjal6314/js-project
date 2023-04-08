@@ -1,0 +1,42 @@
+extends base.pug
+block style 
+    style
+      include  ../static/style.css
+block scripts 
+    script
+      include ../static/index.js
+
+block contant
+    
+    section#intro 
+        |Weclome to Pranjal's Dance Academy 
+    section#mission 
+        h2 our mission 
+        div.card
+            h3 this is a card
+            div.card-box
+                div.card-img
+                    img(src="/static/dd1.png", alt="")
+                div.card-content
+                    p this is the best dance academy
+        div.card
+            h3 this is a card
+            div.card-box
+                div.card-img
+                    img(src="/static/dd2.png", alt="")
+                div.card-content
+                    p this is the best dance academy
+        div.card
+            h3 this is a card
+            div.card-box
+                div.card-img
+                    img(src="/static/dd3.png", alt="")
+                div.card-content
+                    p this is the best dance academy
+    section#sponsor 
+        h2 Sponsor 
+        div.spo-img
+            img( class="imge" src="/static/pepsi.png", alt="Loading....")
+            img( class="imge" src="/static/microsoft.png", alt="Loading....")
+            img( class="imge" src="/static/adobe.png", alt="Loading....")
+            img( class="imge" src="/static/apple.png", alt="Loading....")

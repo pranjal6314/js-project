@@ -1,0 +1,54 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include  ../static/style.css
+  body
+    nav#navbar 
+        ul
+            div.logo
+                img(src="/static/dance.png", alt="")  
+                | PDA
+            li #[a(href="/") Home ]
+            li #[a(href="/contact") Contact ]
+            li #[a(href="/") About ]
+            li #[a(href="/") Service]
+    section#intro 
+        |Weclome to  Dance Academy 
+         
+    section#mission 
+        h2 our mission 
+        div.card
+            h3 this is a card
+            div.card-box
+                div.card-img
+                    img(src="/static/dd1.png", alt="")
+                div.card-content
+                    p this is the best dance academy
+        div.card
+            h3 this is a card
+            div.card-box
+                div.card-img
+                    img(src="/static/dd2.png", alt="")
+                div.card-content
+                    p this is the best dance academy
+        div.card
+            h3 this is a card
+            div.card-box
+                div.card-img
+                    img(src="/static/dd3.png", alt="")
+                div.card-content
+                    p this is the best dance academy
+    section#sponsor 
+        h2 Sponsor 
+        div.spo-img
+            img( class="imge" src="/static/pepsi.png", alt="Loading....")
+            img( class="imge" src="/static/microsoft.png", alt="Loading....")
+            img( class="imge" src="/static/adobe.png", alt="Loading....")
+            img( class="imge" src="/static/apple.png", alt="Loading....")
+    footer#footer 
+        | Copyright © 2022 DanceAcademy.com
+
+    script
+      include ../static/index.js

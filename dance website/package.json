@@ -1,0 +1,25 @@
+{
+  "name": "dance-academy",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "we",
+    "start",
+    "a",
+    "dance",
+    "academy"
+  ],
+  "author": "pranjal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.9",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}

@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    font-size: small;
+    margin-right: 25px;
+}
+.logo img{
+    height:40px;
+    filter: invert(1);
+    padding-right:10px;
+}
+#navbar{
+    background-color:violet;
+    padding: 10px 10px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+#navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+
+    
+}
+#navbar li a:hover{
+    color: black;
+}
+.logo img:hover{
+    filter: invert(0);
+}
+
+li{
+    list-style: none;
+    display:flex;
+    padding:  3px 30px;
+    
+
+}
+#intro{
+    background-color: orange;
+    height: 300px;
+    color:black;
+    font-size:x-large;
+    font-family: 'Sedgwick Ave', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: center / cover no-repeat url("/static/bg1.jpg");
+   
+
+}
+#mission{
+    height: 300px;
+    padding: 0 10px;
+}
+#mission h2{
+    
+    padding-top: 12px;
+    text-align: center;
+    font-family: 'Sedgwick Ave', cursive;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 210px;
+    width: 30%;
+    margin: 23px 22px;
+    display: inline-block;
+}
+h3{
+    text-align: center;
+}
+.card-box{
+    display: flex;
+
+    align-items: center;
+    }
+  
+.card-img{
+    height: 100px;
+    padding: 0 10px;
+    margin: 5px 9px;
+}
+.card-img img{height: inherit;}
+.card-content{
+    font-size: 20px;
+}
+#sponsor{
+    background-color:teal;
+    height: 300px;
+}
+#sponsor h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 12px;
+}
+.spo-img{
+    height: 191px;
+    max-width: 783px;
+    margin: auto;
+}
+
+
+
+.spo-img .imge{
+    height: 80%;
+    margin: 20px;
+}
+
+#footer{
+    display: flex;
+    color: black;
+    font-size: 20px;
+    height: 80px;
+    background:darkseagreen;
+    font-family: 'Sedgwick Ave', cursive;
+    align-items: center;
+    justify-content: center;
+}
